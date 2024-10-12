@@ -1,0 +1,62 @@
+/* .inika-regular {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+  /* border: 1px solid; */
+}
+
+* {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8B7969;
+
+}
+
+.header {
+  border-bottom: solid 1px #E0DFDE;
+}
+
+.header__inner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  max-width: 1512px;
+}
+
+.header__title {
+  display: inline-block;
+  font-size: 40px;
+}
+
+.header__button {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 34px;
+  font-size: 20px;
+  text-align: center;
+  margin: 32px;
+  color: #D9C6B5;
+  background-color: #F0F0F0;
+  text-decoration: none;
+  border: solid 1px #D9C6B5;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 35px;
+  padding: 40px;
+}
+
+.header__inner,
+.main {
+  margin: 0 auto;
+}

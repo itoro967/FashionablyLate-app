@@ -1,0 +1,118 @@
+input[type="text"],
+input[type="tel"],
+select {
+  background-color: #F4F4F4;
+  height: 38px;
+  border: none;
+}
+
+
+input[type='radio'],
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  background-color: #F4F4F4;
+  border: none;
+  resize: none;
+}
+
+.form {
+  width: 970px;
+  margin: 0 auto;
+}
+
+.form__item {
+  margin: 15px 0;
+  display: flex;
+}
+
+.form__item-label {
+  display: inline-block;
+  font-size: 20px;
+  width: 350px;
+}
+
+.label-content {
+  vertical-align: top;
+}
+
+.form__item-input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.form__item-gender {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8B7969;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  vertical-align: text-top;
+  margin: 0px 10px;
+}
+
+.form__item-gender:checked {
+  background-color: #8B7969;
+}
+
+.form__input-name {
+  width: 280px;
+}
+
+.form__input-name:first-child {
+  margin-right: 20px;
+}
+
+.form__input-mail,
+.form__input-addr,
+.form__input-addr2,
+.form__input-content {
+  width: 100%;
+}
+
+.form__input-content {
+  height: 130px;
+}
+
+.form__input-type {
+  width: 330px;
+}
+
+.__gender {
+  height: 38px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  transform: translate(50%, 40%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: #BEB1A6 #00000000 #00000000 #00000000;
+  pointer-events: none;
+}
+
+.form__submit {
+  display: block;
+  width: 160px;
+  height: 46px;
+  background-color: #82756A;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin: 40px auto;
+  border: none;
+  cursor: pointer;
+}

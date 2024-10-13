@@ -19,9 +19,7 @@
   <header class="header">
     <div class="header__inner">
       <span class="header__title">FashionablyLate</span>
-      @hasSection('header-button')
-      <a href="#" class="header__button">@yield('header-button')</a>
-      @endif
+      @yield('header-button')
     </div>
   </header>
   <main class="main">

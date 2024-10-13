@@ -6,20 +6,12 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function test()
-    {
-        return view('test');
-    }
     public function index()
     {
         return view('index');
     }
-    public function register()
+    public function admin()
     {
-        return view('register');
-    }
-    public function login()
-    {
-        return view('login');
+        return view('admin');
     }
 }

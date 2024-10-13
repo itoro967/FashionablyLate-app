@@ -4,7 +4,7 @@
 @endsection
 
 @section('header-button')
-register
+<a href="/register" class="header__button">register</a>
 @endsection
 
 @section('page-title')
@@ -12,15 +12,25 @@ Login
 @endsection
 
 @section('main')
-<form class="form">
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+<form class="form" action="/login" method="post">
+  @csrf
   <div class="form__inner">
     <div class="form__item">
       <label for="item--input-addr" class="item--label">メールアドレス</label>
-      <input type="text" name="name" id="item--input-addr" class="item--input" placeholder="例: test@example.com">
+      <input type="text" name="email" id="item--input-addr" class="item--input" placeholder="例: test@example.com">
     </div>
     <div class="form__item">
       <label for="item--input-pass" class="item--label">パスワード</label>
-      <input type="password" name="name" id="item--input-pass" class="item--input" placeholder="例: coachtech1106">
+      <input type="password" name="password" id="item--input-pass" class="item--input" placeholder="例: coachtech1106">
     </div>
     <input type="submit" value="ログイン" class="form__submit">
   </div>

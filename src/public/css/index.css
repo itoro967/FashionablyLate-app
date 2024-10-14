@@ -36,6 +36,11 @@ textarea {
   width: 350px;
 }
 
+.char-red {
+  margin: 5px;
+  color: #FF9494;
+}
+
 .label-content {
   vertical-align: top;
 }
@@ -78,8 +83,13 @@ textarea {
   width: 100%;
 }
 
+.form__input-tel {
+  text-align: center;
+}
+
 .form__input-content {
   height: 130px;
+  white-space: pre-wrap;
 }
 
 .form__input-type {
@@ -115,4 +125,9 @@ textarea {
   margin: 40px auto;
   border: none;
   cursor: pointer;
+}
+
+.alert-message {
+  color: #FF9494;
+  margin-left: 360px;
 }

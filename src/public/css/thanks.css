@@ -1,0 +1,42 @@
+* {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8B7969;
+
+}
+
+.main {
+  text-align: center;
+}
+
+.back-ground__text {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  font-size: 240px;
+  white-space: nowrap;
+  color: #8b79690d;
+}
+
+.thanks {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.thanks-message {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 40px;
+}
+
+.home-button {
+  text-decoration: none;
+  background-color: #82756A;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 5px 20px;
+}

@@ -1,0 +1,232 @@
+/* * {
+  border: 1px solid;
+} */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: relative;
+  right: 8px;
+  width: 26px;
+  background-image: none;
+}
+
+input,
+select {
+  background-color: #F4F4F4;
+  height: 38px;
+  font-size: 16px;
+}
+
+table {
+  border: 1px solid #E0DFDE;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+th {
+  background-color: #8B7969;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+td {
+  font-size: 20px;
+  border-bottom: 1px solid #E0DFDE;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__button {
+  cursor: pointer;
+}
+
+.content {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between
+}
+
+.form__input-text {
+  width: 350px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  transform: translate(50%, 40%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: #BEB1A6 #00000000 #00000000 #00000000;
+  pointer-events: none;
+}
+
+.form__input-gender {
+  width: 100px;
+}
+
+.form__input-type {
+  width: 250px;
+}
+
+.form__input-date {
+  width: 150px;
+}
+
+.form__submit,
+.form__reset-button {
+  display: block;
+  width: 100px;
+  height: 38px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.form__submit {
+  background-color: #82756A;
+}
+
+.form__reset-button {
+  text-align: center;
+  text-decoration: none;
+  line-height: 38px;
+  background-color: #D9C6B5;
+
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table__detail-button {
+  color: #D9C6B5;
+  background-color: #F4F4F4AA;
+  border: 1px solid;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+}
+
+.modal__inner-top {
+  text-align: right;
+}
+
+.close-button {
+  display: inline-block;
+  border: 1px solid #8B7969;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 33px;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.modal:target {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 860px;
+  background-color: #FFFFFF;
+  border: 1px solid #8B7969;
+}
+
+.modal__table {
+  border: none;
+  margin: 25px;
+}
+
+.modal__table th {
+  background-color: #FFFFFF;
+  color: #8B7969;
+  width: 250px;
+  vertical-align: top;
+}
+
+.modal__table td {
+  border-bottom: none;
+}
+
+.td_detail {
+  white-space: pre-wrap;
+}
+
+.modal__delete {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  width: 75px;
+  font-size: 18px;
+  background-color: #BA370D;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* ページネーションCSS */
+.pagination {
+  display: inline-block;
+  border: 1px solid;
+  height: 30px;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+.pagination li {
+  height: 100%;
+  display: inline-block;
+  width: 30px;
+  border-right: 1px solid;
+  text-align: center;
+  margin: 0 -2px;
+}
+
+.pagination li:last-of-type {
+  border-right: none;
+}
+
+.pagination .active {
+  background-color: #8B7969;
+}
+
+.pagination .active>span {
+  color: #FFFFFF;
+}

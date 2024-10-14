@@ -15,7 +15,7 @@
 1. ```php artisan db:seed ```
 1. 完了
 
-※http://localhost/ にアクセスした際にPermissionエラーが出る場合は下記を実行
+※http://localhost/ にアクセスした際にPermissionエラーが出る場合は次を実行
 ```chmod -R 777 .```
 ## 使用技術(実行環境)
 - PHP 8.2-fpm

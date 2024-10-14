@@ -4,6 +4,7 @@
 
 ### Dockerビルド
 1. ```git clone https://github.com/itoro967/FashionablyLate-app.git```
+1. ```cd FashionablyLate-app```
 1. ```sudo docker-compose up -d --build```
 ### Laravel環境構築
 1. ```sudo docker-compose exec php bash```
